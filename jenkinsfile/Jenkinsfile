@@ -1,0 +1,19 @@
+pipeline {
+    agent any 
+    tools {
+        maven 'maven'
+    }
+    stages {
+        stage('checkout') {
+            steps {
+                git credentialsId: 'b58a7a6f-3ecd-4242-82e5-deab75c68952', url: 'https://github.com/girldevops/Projet-CD-CI.git'
+
+			}
+    	}
+    	stage('build') {
+            steps {
+                sh 'mvn install'
+        	}
+		} 
+    }
+}

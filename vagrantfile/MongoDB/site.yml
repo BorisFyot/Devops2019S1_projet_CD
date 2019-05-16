@@ -1,3 +1,0 @@
----
-- name: Install-server
-  import_playbook: install-server.yml
