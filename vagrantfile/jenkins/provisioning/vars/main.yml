@@ -1,0 +1,9 @@
+---
+ntp_timezone: Etc/GMT+1
+
+firewall_allowed_tcp_ports:
+  - "22"
+  - "25"
+  - "80"
+  - "443"
+  - "8080"
