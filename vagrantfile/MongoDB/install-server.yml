@@ -1,0 +1,7 @@
+---
+- name: db  |  INSTALL
+  hosts: db-server
+  become: yes
+  gather_facts: yes  
+  roles:
+    - { role: samdoran.mongodb }
