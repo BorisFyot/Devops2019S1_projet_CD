@@ -1,0 +1,8 @@
+---
+- name: pip  |  INSTALL
+  hosts: db-server
+  become: yes
+  gather_facts: yes  
+  tasks:
+    - name: Install python-pip
+      yum: name=python-pip state=present
