@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>com.wunderit</groupId>
 	<artifactId>projetcd</artifactId>
-	<version>1.3-SNAPSHOT</version>
+	<version>1.2-SNAPSHOT</version>
 	<name>projetcd</name>
 	<description>Application for CD Project</description>
 	<packaging>war</packaging>
@@ -60,7 +60,7 @@
     	<repository>
         	<id>nexus-release</id>
         	<name>devops-app-01-releases</name>
-        	<url>http://192.168.33.150:8081/azeazearepository/maven-releases/</url>
+        	<url>http://192.168.33.150:8081/repository/maven-releases/</url>
     	</repository>
 	</distributionManagement>
 	
