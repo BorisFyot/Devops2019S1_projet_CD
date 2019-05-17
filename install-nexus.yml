@@ -1,0 +1,29 @@
+
+---
+- name: This sets up a Nexus
+  hosts: nexus
+  become: true
+  become_method: sudo
+  tasks:
+  - name: Ensure java is installed.
+    package:
+      name: "java-1.8.0-openjdk.x86_64"
+      state: present
+
+  - name: nexus | archive download
+    get_url: url="https://sonatype-download.global.ssl.fastly.net/nexus/3/nexus-3.16.1-02-unix.tar.gz"  dest="/tmp"
+    
+
+  - name: Unarchive nexus-3.16.1-02 from tmp
+    unarchive:
+      remote_src: /tmp/nexus-3.16.1-02-unix.tar.gz
+      remote_dest: /opt
+
+  - name: nexus  | moving folder
+    shell: mv nexus-3.16.1-02 nexus
+    
+  - name: nexus | add user
+    shell: adduser nexus
+
+  - name: nexus | change ownership
+    shell: chown -R nexus:nexus /app/nexus

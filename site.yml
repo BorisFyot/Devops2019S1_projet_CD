@@ -1,0 +1,5 @@
+---
+- name: Install Nexus
+  import_playbook: install-nexus.yml
+- name: Install Kubernetes
+  import_playbook: install-k8s.yml
