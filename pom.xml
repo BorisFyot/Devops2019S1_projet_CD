@@ -69,7 +69,6 @@
 	<scm>
    		<connection>scm:git:git@github.com:BorisFyot/Devops2019S1_projet_CD.git</connection>
    		<url>scm:git:git@github.com:BorisFyot/Devops2019S1_projet_CD.git</url>
-   		<developerConnection>scm:git:git@github.com:BorisFyot/Devops2019S1_projet_CD.git</developerConnection>
   		<tag>projetcd-1.1</tag>
 	</scm>
 	
