@@ -4,12 +4,12 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.0.0-SNAPSHOT</version>
+		<version>2.1.4.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.wunderit</groupId>
 	<artifactId>projetcd</artifactId>
-	<version>1.2</version>
+	<version>2.0-SNAPSHOT</version>
 	<name>projetcd</name>
 	<description>Application for CD Project</description>
 	<packaging>war</packaging>
@@ -70,7 +70,7 @@
    		<connection>scm:git:git@github.com:BorisFyot/Devops2019S1_projet_CD.git</connection>
    		<url>scm:git:git@github.com:BorisFyot/Devops2019S1_projet_CD.git</url>
    		<developerConnection>scm:git:git@github.com:BorisFyot/Devops2019S1_projet_CD.git</developerConnection>
-  		<tag>projetcd-1.2</tag>
+  		<tag>HEAD</tag>
 	</scm>
 	
 	<build>
