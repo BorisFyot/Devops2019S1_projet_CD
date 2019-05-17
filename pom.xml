@@ -52,6 +52,19 @@
         </dependency>
 	</dependencies>
 
+	<distributionManagement>
+    	<snapshotRepository>
+        	<id>nexus-snapshot</id>
+        	<name>devops-app-01-snapshots</name>
+        	<url>http://192.168.33.150:8081/repository/maven-snapshots/</url>
+    	</snapshotRepository>
+    	<repository>
+        	<id>nexus-release</id>
+        	<name>devops-app-01-releases</name>
+        	<url>http://192.168.33.150:8081/repository/maven-releases/</url>
+    	</repository>
+	</distributionManagement>
+	
 	<build>
 		<plugins>
 			<plugin>
