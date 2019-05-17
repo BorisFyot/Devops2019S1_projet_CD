@@ -65,6 +65,15 @@
     	</repository>
 	</distributionManagement>
 	
+
+
+	<scm>
+   		<connection>scm:git:git@github.com:BorisFyot/Devops2019S1_projet_CD.git</connection>
+   		<url>scm:git:git@github.com:BorisFyot/Devops2019S1_projet_CD.git</url>
+   		<developerConnection>scm:git:git@github.com:BorisFyot/Devops2019S1_projet_CD.git</developerConnection>
+  		<tag>HEAD</tag>
+	</scm>
+	
 	<build>
 		<plugins>
 			<plugin>
@@ -81,9 +90,11 @@
 			</plugin>
 		</plugins>
 		<pluginManagement>
-			 <plugins>
-				<artifactId>maven-release-plugin</artifactId>
-			 </plugins>
+			<plugins>
+				<plugin>
+					<artifactId>maven-release-plugin</artifactId>
+				</plugin>
+			</plugins>
 		</pluginManagement>
 	</build>
 
