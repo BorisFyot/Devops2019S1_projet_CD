@@ -20,7 +20,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>12</java.version>
 	</properties>
-
+ 	
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -61,7 +61,7 @@
     	<repository>
         	<id>nexus-release</id>
         	<name>devops-app-01-releases</name>
-        	<url>http://192.168.33.150:8081/repository/maven-releases/</url>
+        	<url>http://192.168.33.150:8081/	repository/maven-releases/</url>
     	</repository>
 	</distributionManagement>
 	
@@ -71,7 +71,20 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+   				<groupId>org.apache.maven.plugins</groupId>
+   				<artifactId>maven-release-plugin</artifactId>
+   				<version>2.4.2</version>
+   				<configuration>
+      				<autoVersionSubmodules>true</autoVersionSubmodules>
+   				</configuration>
+			</plugin>
 		</plugins>
+		<pluginManagement>
+			 <plugins>
+				<artifactId>maven-release-plugin</artifactId>
+			 </plugins>
+		</pluginManagement>
 	</build>
 
 </project>
